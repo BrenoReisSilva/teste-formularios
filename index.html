@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrever-se</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">David Laid</h1>
+    <a class="info" href="./mais-info">Mais Informações</a>
+  </header>
+
+  <h1 class="titulo">Guia para Definição</h1>
+  <main aria-label="principal">
+    <article class="conteudo">
+      <div>
+        <h2 class="inscrever">Inscreva-se</h2>
+
+        <form action="">
+          <div class="form-flex">
+            <div>
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nomes" placeholder="ex: João da Silva">
+            </div>
+
+            <div>
+              <label for="nascimento">Data de Nascimento</label>
+              <input type="date" id="nscimento" name="nascimento">
+            </div>
+          </div>
+        </form>
+
+        <form action="">
+          <div class="form-flex">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="davidlaid@gmail.com">
+            </div>
+
+            <div>
+              <label for="celular">Celular</label>
+              <input type="number" name="celular" placeholder="(99) 9 9999-9999">
+            </div>
+          </div>
+        </form>
+
+        <form action="">
+          <div class="form-flex">
+            <div class="select">
+              <label  for="tempo">Tempo de Treino</label>
+              <select name="tempo" id="tempo">
+                <option value="Inicio">Iniciei agora</option>
+                <option value="6m">Há 6 meses</option>
+                <option value="+1a">Mais de 1 ano</option>
+              </select>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+      <img src="./img/David Laid.jpeg" alt="David laid">
+    </article>
+  </main>
+</body>
+
+</html>
