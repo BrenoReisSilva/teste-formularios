@@ -19,7 +19,6 @@
     <article class="conteudo">
       <div>
         <h2 class="inscrever">Inscreva-se</h2>
-
         <form action="">
           <div class="form-flex">
             <div>
@@ -29,12 +28,12 @@
 
             <div>
               <label for="nascimento">Data de Nascimento</label>
-              <input type="date" id="nscimento" name="nascimento">
+              <input class="data" type="date" id="nascimento" name="nascimento">
             </div>
           </div>
-        </form>
 
-        <form action="">
+
+
           <div class="form-flex">
             <div>
               <label for="email">Email</label>
@@ -46,24 +45,29 @@
               <input type="number" name="celular" placeholder="(99) 9 9999-9999">
             </div>
           </div>
-        </form>
 
-        <form action="">
+
+
           <div class="form-flex">
-            <div class="select">
-              <label  for="tempo">Tempo de Treino</label>
+            <div>
+              <label for="tempo">Tempo de Treino</label>
               <select name="tempo" id="tempo">
                 <option value="Inicio">Iniciei agora</option>
                 <option value="6m">Há 6 meses</option>
                 <option value="+1a">Mais de 1 ano</option>
               </select>
             </div>
-
           </div>
-        </form>
 
+
+          <div class="checkbox">
+            <input type="checkbox" id="termos" name="termos" value="aceito">
+            <label for="termos">Eu aceito todos os termos</label>
+          </div>
+          <button>Enviar</button>
+        </form>
       </div>
-      <img src="./img/David Laid.jpeg" alt="David laid">
+      <img src="./img/DavidLaid(2).jpg" alt="David laid">
     </article>
   </main>
 </body>
