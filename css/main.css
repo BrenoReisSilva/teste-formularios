@@ -1,14 +1,15 @@
 .titulo {
   margin-bottom: 40px;
   text-align: center;
-  font-size:3rem;
+  font-size: 5rem;
   font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .conteudo {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 40px;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 40px;
@@ -70,5 +71,14 @@
   align-items: center;
 }
 
+.botao {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: 2px solid #a8a8a8;
+  border-radius: 4px;
+}
 
-
+.conteudo img {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
