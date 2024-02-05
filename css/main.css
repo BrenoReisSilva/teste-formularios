@@ -25,7 +25,8 @@
 }
 
 .form-flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
   gap: 20px;
 }
@@ -88,13 +89,55 @@ select:hover {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  background-color: red;
+  color: white;
 }
 
 .botao:hover {
-  background-color: #dedede;
-  border-color: #cccccc;
+  background-color: darkred;
 }
 
 .conteudo img {
   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
+
+
+@media (max-width:800px) {
+  .titulo {
+    font-size: 3rem;
+  }
+  .inscrever {
+    font-size:1.5rem ;
+  }
+  .form-flex input,
+select  {
+  font-size: 1rem;
+  padding: 6px;
+}
+}
+
+@media (max-width:800px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .definicao-imagem img {
+    max-width: 300px;
+
+  }
+  .definicao-conteudo {
+    grid-row: 2;
+  }
+}
+
+@media (max-width:600px) {
+  .form-flex {
+    grid-template-columns: 1fr;
+  }
+  .definicao-imagem img {
+    display: none;
+  }
+  .titulo {
+    margin-bottom: 20px;
+  }
+} 
